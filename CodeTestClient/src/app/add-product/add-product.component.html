@@ -1,0 +1,36 @@
+<div class="col-md-6 user-container">
+    <h2 class="text-center">Add Product</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">City:</label>
+        <input type="text" formControlName="city" placeholder="city" name="city" class="form-control" id="city">
+      </div>
+  
+      <div class="form-group">
+        <label for="startDate">Start Date:</label>
+        <input type="datetime-local" formControlName="startDate" placeholder="start date" name="startDate" class="form-control" id="startDate">
+      </div>
+  
+      <div class="form-group">
+        <label for="endDate">End Date:</label>
+        <input type="datetime-local" formControlName="endDate" placeholder="End date" name="endDate" class="form-control" id="enDate">
+      </div>
+  
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input  type="text" formControlName="price" placeholder="price" name="price" class="form-control" id="price">
+      </div>
+  
+      <div class="form-group">
+        <label for="status">Status:</label>
+        <input type="text" formControlName="status" placeholder="status" name="status" class="form-control" id="status">
+      </div>
+  
+      <div class="form-group">
+        <label for="color">Color:</label>
+        <input type="text" formControlName="color" placeholder="color" name="color" class="form-control" id="color">
+      </div>
+  
+      <button class="btn btn-success">Add</button>
+    </form>
+  </div>
